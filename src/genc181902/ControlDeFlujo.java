@@ -101,6 +101,9 @@ public class ControlDeFlujo {
         boolean comparacionDeStrings = nombreEstudiante.equalsIgnoreCase("Martin");
         System.out.println("La comparacion entre nombres resultó " + comparacionDeStrings);*/
 
+        /** OPERADOR TERNARIO **/
+
+
 
 
 
