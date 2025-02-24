@@ -3,7 +3,7 @@ package genc182402;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArreglosEstaticos {
+public class ArreglosFijos {
     //Los arrays en Java tienen una longitud fija por naturaleza, esto quiere decir, que no puedo aumentar su longitud
 
     public static void main(String[] args) {
