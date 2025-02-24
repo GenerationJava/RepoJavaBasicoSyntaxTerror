@@ -43,6 +43,7 @@ public class Funciones {
     public static void main(String[] args) {
         //Llamado al método saludo
         saludo();
+        saludo();
 
         //Llamado a una función de instancia
         //Creo primero la instancia
