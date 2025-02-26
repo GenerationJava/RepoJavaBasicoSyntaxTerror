@@ -2,6 +2,7 @@ package genc182502;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class Conjuntos {
@@ -29,16 +30,17 @@ public class Conjuntos {
         seriesFavoritas.remove("Malcolm");
         System.out.println(seriesFavoritas);
 
-        //Verificar si existe un elemento en el conjunto
-        System.out.println(seriesFavoritas.contains("The Office"));
-
+        Object[] listaDeSeriesFija = seriesFavoritas.toArray();
+        System.out.println(Arrays.toString(listaDeSeriesFija));
 
 
         /*
-        Object[] listaDeSeriesFija = seriesFavoritas.toArray();
-        System.out.println(Arrays.toString(listaDeSeriesFija));
-        */
-
+        List<Integer> series = seriesFavoritas.stream()
+                .filter(n -> n % 2 == 0)  // Filtra números pares
+                .map(n -> n * 2)          // Multiplica cada número por 2
+                .sorted();    // Ordena los números
+        //Verificar si existe un elemento en el conjunto
+        System.out.println(seriesFavoritas.contains("The Office"));*/
 
 
 
