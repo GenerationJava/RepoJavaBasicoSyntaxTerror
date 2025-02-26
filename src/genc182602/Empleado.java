@@ -16,6 +16,16 @@ public class Empleado extends Persona{
     }
 
     @Override
+    public void desplazarse(int velocidadMovimiento, String direccion) {
+        System.out.println(this.nombre + " recorre " + velocidadMovimiento + " km por hora, hacia " + direccion);
+    }
+
+    @Override
+    public void saludar() {
+        System.out.println("Hola, soy " + this.nombre + " y trabajo como " + this.cargo);
+    }
+
+    @Override//Anotación
     public String toString() {
         return "Empleado{" +
                 "cargo='" + cargo + '\'' +

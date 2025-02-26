@@ -1,6 +1,7 @@
 package genc182602;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -28,12 +29,34 @@ public class Main {
         //Imprimir los datos de la persona
         System.out.println(personaUno);
 
+        //Creamos instancias de las distintas clases
         Deportista deportistaUno = new Deportista();
-        deportistaUno.nombre = "Esteban";
+        deportistaUno.nombre = "Esteban";//Variable en común
         deportistaUno.deporteLiga.put("Nombre de deporte", "Escalada Deportiva");
 
+        Estudiante estudianteUno = new Estudiante();
+        estudianteUno.nombre = "Fernanda";//Variable en común
+        estudianteUno.curso = "Java";
+
+        Empleado empleadoUno = new Empleado();
+        empleadoUno.nombre = "Gabriel";//Variable en común
+        empleadoUno.cargo = "DJ";
+
+        //Crear una lista con estos datos
+        ArrayList<Persona> listaDeOcupaciones = new ArrayList<>();
+        listaDeOcupaciones.add(deportistaUno);
+        listaDeOcupaciones.add(estudianteUno);
+        listaDeOcupaciones.add(empleadoUno);
+
+        //Recorrer la lista, llamando al método saludar
+        for (Persona m : listaDeOcupaciones) {
+            m.saludar();
+            m.desplazarse(10, "ida y vuelta");
+        }
+
+        /*
         System.out.println(deportistaUno);
-        deportistaUno.saludar();
+        deportistaUno.saludar();*/
 
 
 

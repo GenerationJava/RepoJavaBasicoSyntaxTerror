@@ -20,6 +20,11 @@ public class Deportista extends Persona {
         System.out.println("Hola, soy " + this.nombre + " y practico " + deporteLiga.get("Nombre de deporte"));
     }
 
+    @Override
+    public void desplazarse(int velocidadMovimiento, String direccion) {
+        System.out.println(this.nombre + " corre " + velocidadMovimiento + " km por hora, hacia " + direccion);
+    }
+
     //Sobrescribe el comportamiento del método como lo tenía su clase padre
     @Override
     public String toString() {

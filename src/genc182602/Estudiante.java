@@ -12,6 +12,16 @@ public class Estudiante extends Persona {
     }
 
     @Override
+    public void desplazarse(int velocidadMovimiento, String direccion) {
+        System.out.println(this.nombre + " camina " + velocidadMovimiento + " km por hora, hacia " + direccion);
+    }
+
+    @Override
+    public void saludar() {
+        System.out.println("Hola, soy " + this.nombre + " y estoy cursando " + this.curso);
+    }
+
+    @Override
     public String toString() {
         return "Estudiante{" +
                 "curso='" + curso + '\'' +
