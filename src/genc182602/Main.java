@@ -2,6 +2,7 @@ package genc182602;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
 
@@ -57,7 +58,6 @@ public class Main {
         /*
         System.out.println(deportistaUno);
         deportistaUno.saludar();*/
-
 
 
 
