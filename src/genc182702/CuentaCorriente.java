@@ -5,6 +5,7 @@ public class CuentaCorriente implements CuentaBancaria {
     private String numeroDeCuenta;
     private double saldo;
     private double limiteSobregiro;
+    private Cliente clienteCuenta;
 
 
     //Constructores
@@ -34,6 +35,14 @@ public class CuentaCorriente implements CuentaBancaria {
 
     public void setLimiteSobregiro(double limiteSobregiro) {
         this.limiteSobregiro = limiteSobregiro;
+    }
+
+    public Cliente getClienteCuenta() {
+        return clienteCuenta;
+    }
+
+    public void setClienteCuenta(Cliente clienteCuenta) {
+        this.clienteCuenta = clienteCuenta;
     }
 
     //Métodos

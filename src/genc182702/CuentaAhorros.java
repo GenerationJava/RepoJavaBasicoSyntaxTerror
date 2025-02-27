@@ -4,6 +4,7 @@ public class CuentaAhorros implements CuentaBancaria {
     //Atributos
     private String numeroDeCuenta;
     private double saldo;
+    private Cliente clienteCuenta;
 
     //Constructores
     public CuentaAhorros() {
@@ -29,6 +30,14 @@ public class CuentaAhorros implements CuentaBancaria {
 
     public void setSaldo(double saldo) {
         this.saldo = saldo;
+    }
+
+    public Cliente getClienteCuenta() {
+        return clienteCuenta;
+    }
+
+    public void setClienteCuenta(Cliente clienteCuenta) {
+        this.clienteCuenta = clienteCuenta;
     }
 
     //Métodos

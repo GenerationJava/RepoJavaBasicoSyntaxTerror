@@ -1,6 +1,8 @@
 package genc182702;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Cliente {
 
@@ -9,6 +11,8 @@ public class Cliente {
     private String rut;
     private LocalDate fechaNacimiento;
     private int id;
+    private List<CuentaBancaria> cuentas = new ArrayList<>();
+
     //Relación entre esta clase y la clase cuentaBancaria
 
 
@@ -61,6 +65,14 @@ public class Cliente {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public List<CuentaBancaria> getCuentas() {
+        return cuentas;
+    }
+
+    public void setCuentas(List<CuentaBancaria> cuentas) {
+        this.cuentas = cuentas;
     }
 
     //Método ToString
