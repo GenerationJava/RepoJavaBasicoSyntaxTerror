@@ -17,6 +17,13 @@ public class Main {
         System.out.println(clienteVacio);
         System.out.println(clienteLleno);
 
+        //Probamos Getter y Setter
+        System.out.println(clienteLleno.getNombreCompleto());//Imprime "Martin"
+        clienteLleno.setNombreCompleto("Gabriel");//Cambia el nombre completo
+        System.out.println(clienteLleno.getNombreCompleto());//Imprime Gabriel
+
+
+
 
 
     }
