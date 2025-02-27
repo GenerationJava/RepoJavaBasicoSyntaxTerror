@@ -23,6 +23,12 @@ public class Main {
         System.out.println(clienteLleno.getNombreCompleto());//Imprime Gabriel
 
 
+        //
+        CuentaCorriente cuentaCorriente = new CuentaCorriente("00001231245");
+        cuentaCorriente.setLimiteSobregiro(20000);
+        cuentaCorriente.depositar(1000000.00);
+        cuentaCorriente.retirar(1030000);
+
 
 
 
