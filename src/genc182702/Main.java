@@ -23,11 +23,16 @@ public class Main {
         System.out.println(clienteLleno.getNombreCompleto());//Imprime Gabriel
 
 
-        //
+        //Creamos una cuenta corriente probando el límite de sobregiro
         CuentaCorriente cuentaCorriente = new CuentaCorriente("00001231245");
         cuentaCorriente.setLimiteSobregiro(20000);
         cuentaCorriente.depositar(1000000.00);
         cuentaCorriente.retirar(1030000);
+
+        CuentaAhorros cuentaAhorros = new CuentaAhorros("0000756754664");
+        cuentaAhorros.depositar(50000);
+        cuentaAhorros.retirar(60000);
+        
 
 
 

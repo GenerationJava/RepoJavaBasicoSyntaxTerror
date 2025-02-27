@@ -9,6 +9,10 @@ public class CuentaAhorros implements CuentaBancaria {
     public CuentaAhorros() {
     }
 
+    public CuentaAhorros(String numeroDeCuenta) {
+        this.numeroDeCuenta = numeroDeCuenta;
+    }
+
     public CuentaAhorros(String numeroDeCuenta, double saldo) {
         this.numeroDeCuenta = numeroDeCuenta;
         this.saldo = saldo;
@@ -30,27 +34,45 @@ public class CuentaAhorros implements CuentaBancaria {
     //Métodos
     @Override
     public void depositar(double monto) {
-
+        if (monto > 0) {
+            this.saldo += monto;
+            System.out.println("Se ha depositado un monto de $" + monto);
+            System.out.println("Tiene un saldo " + saldo);
+        } else {
+            System.out.println("El monto ingresado es inválido");
+        }
     }
 
     @Override
     public void transferir(double monto) {
-
+        if (monto > 0 && monto <= saldo) {
+            this.saldo -= monto;//Se Actualiza el saldo
+            System.out.println("Se ha transferido un monto de $" + monto);
+            System.out.println("Tiene un saldo " + saldo);
+        } else {
+            System.out.println("Fondos insuficientes");
+        }
     }
 
     @Override
     public void retirar(double monto) {
-
+        if (monto > 0 && monto <= saldo) {
+            this.saldo -= monto;//Se Actualiza el saldo
+            System.out.println("Ha retirado una cantida de $" + monto);
+            System.out.println("Tiene un saldo " + saldo);
+        } else {
+            System.out.println("Límite excedido");
+        }
     }
 
     @Override
     public double verSaldo() {
-        return 0;
+        return saldo;
     }
 
+
+
     //ToString
-
-
     @Override
     public String toString() {
         return "CuentaAhorros{" +
