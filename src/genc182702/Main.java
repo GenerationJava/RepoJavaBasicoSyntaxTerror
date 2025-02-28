@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.concurrent.ConcurrentLinkedDeque;
 
 public class Main {
     //Lista de clientes del banco
@@ -132,13 +131,6 @@ public class Main {
                         return;
                 }
         }
-
-
-
-
-
-
-
 
 
     }
